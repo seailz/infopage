@@ -1,0 +1,139 @@
+<html lang="en">
+
+<head>
+    <title>Seailz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body>
+<div class="rounded">
+<h3 class="title">
+    I'm <span class="autotype"></span>
+</h3>
+    <h2 class="desc">
+        I have over 2 years of experience!
+    </h2>
+    <p class="desc">
+        In the past, I've worked on multiple Minecraft servers,
+    </p>
+    <p class="desc">
+        gathering experience along the way!
+    </p>
+    <button class="github" onclick="github()">
+        GitHub
+    </button>
+    <button class="hireme" onclick="hireMe()">
+        Hire Me
+    </button>
+</div>
+</body>
+
+<style>
+    .github {
+        transition-duration: 0.4s;
+        width: 120px;
+        height: 60px;
+        background-color: black;
+        border-radius: 20px;
+        font-size: 20px;
+        color: white;
+        font-family: 'Comfortaa', cursive;
+        outline-color: white;
+        cursor: pointer;
+        margin-left: 38%;
+    }
+    .github:hover {
+        width: 150px;
+        height: 60px;
+        font-size: 25px;
+        background-color: white;
+        color: black;
+        border-radius: 20px;
+    }
+    .hireme {
+        transition-duration: 0.4s;
+        width: 120px;
+        height: 60px;
+        background-color: black;
+        border-radius: 20px;
+        font-size: 20px;
+        color: white;
+        font-family: 'Comfortaa', cursive;
+        outline-color: white;
+        cursor: pointer;
+        margin-left: 1%;
+    }
+    .hireme:hover {
+        width: 150px;
+        height: 60px;
+        font-size: 25px;
+        background-color: white;
+        color: black;
+        border-radius: 20px;
+    }
+
+    .desc {
+        font-size: 32px;
+        background: -webkit-linear-gradient(#413939, #000000);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Comfortaa', cursive;
+        text-shadow: 0 0 50px black;
+        text-align: center;
+    }
+    .title {
+        font-size: 72px;
+        background: -webkit-linear-gradient(#8F00F9, #F900E2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Comfortaa', cursive;
+        text-shadow: 0 0 50px black;
+        text-align: center;
+        padding-top: 5%;
+    }
+    .rounded {
+        background: white;
+        width: 60%;
+        height: 60%;
+        opacity: 70%;
+        margin-left: 19%;
+        margin-top: 8%;
+        border-radius: 20px;
+        box-shadow: 10px 10px 100px #000000;
+    }
+    body {
+        width: 100%;
+        min-width: 1000px;
+        background: hsla(0, 5%, 5%, 1) url("https://files.seailz.com/websites/info/assets/img/background/background.gif") no-repeat fixed center;
+        background-size: cover;
+        font-size: 70px;
+        padding-top: 35px;
+        backdrop-filter: blur(5px);
+    }
+</style>
+<script>
+    const typed = new Typed(".autotype", {
+        strings: ["seailz", "seailz", "seailz", "seailz", "seailz", "a Java Developer", "a Plugin Developer", "a Discord Bot Developer"],
+        typeSpeed: 45,
+        backSpeed: 30,
+        smartBackspace: true,
+        loop: true
+    })
+
+    function readMore() {
+        window.location.replace("readmore.html");
+    }
+    function github() {
+        window.location.replace("https://www.github.com/IoyoCode")
+    }
+    function hireMe() {
+        window.location.replace("https://www.mc-market.org/work")
+    }
+</script>
+</html>
+
