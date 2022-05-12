@@ -8,6 +8,7 @@
     <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
 </head>
 
 <body>
@@ -78,7 +79,7 @@
     }
 
     .desc {
-        font-size: 50%;
+        font-size: 230%;
         background: -webkit-linear-gradient(#413939, #000000);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -87,7 +88,7 @@
         text-align: center;
     }
     .title {
-        font-size: 90%;
+        font-size: 270%;
         background: -webkit-linear-gradient(#8F00F9, #F900E2);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -107,14 +108,19 @@
         box-shadow: 10px 10px 100px #000000;
     }
     body {
-        width: 100%;
         min-width: 1000px;
         background: hsla(0, 5%, 5%, 1) url("https://files.seailz.com/websites/info/assets/img/background/background.gif") no-repeat fixed center;
         background-size: cover;
-        font-size: 70px;
-        padding-top: 35px;
+        padding-top: 4%;
         backdrop-filter: blur(5px);
     }
+
+    body, html {
+        height: 80%;
+        width: 80%;
+        scroll-behavior: smooth;
+    }
+
 </style>
 <script>
     const typed = new Typed(".autotype", {
@@ -129,7 +135,7 @@
         window.location.replace("readmore.html");
     }
     function github() {
-        window.location.replace("https://www.github.com/IoyoCode")
+        window.location.replace("https://www.github.com/seailz")
     }
     function hireMe() {
         window.location.replace("https://www.mc-market.org/work")
